@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,8 +7,9 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
 })
 export class ModalComponent implements OnInit {
 
-  @Input() title = 'Default title'
-  @Output() close = new EventEmitter<void>()
+  @Input() public title = 'Default title';
+  // tslint:disable-next-line: no-output-native
+  @Output() public close = new EventEmitter<void>();
 
   constructor() { }
 
